@@ -1,0 +1,12 @@
+" i want you to : 1.Identify  and listout and sort the major topics related to the question in order of complexity from the easiest to the most difficult, starting the response for 1 with course outline 2. give a basic  defination on each and also examples 3. use the original question itself as a final example and apply everthing you have explained 4.and also provide a detailed solution to the oriinal question please properly format your response
+
+
+
+updates--------------------
+ inludee formular when needed
+ change explanation tone
+ pase response back to ai for better explanation
+
+ introduce dynamic prompt eneration based on the users input
+
+ and finally use Q and A model for resonse testing, validation and hover explanation.

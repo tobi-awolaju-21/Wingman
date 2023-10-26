@@ -1,0 +1,201 @@
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    }
+.heads{
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    height: 80px;
+    margin-left: -10px;
+    margin-right:-20px;
+    margin-top:-20px;
+    display: flex;
+    justify-content: space-between; /* This will push the button to the right */
+    align-items: center; /* Vertically center the items */
+}
+h3{
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+h4{
+    color: rgb(0, 0, 0);
+}
+strong{
+    font-weight:bold;
+    color: rgb(77, 77, 77);
+    margin-left: 4px;
+    margin-right:10px;
+}
+p{
+   color: rgb(77, 77, 77);
+    margin-left: 4px;
+    margin-right:10px;
+}
+li{
+    margin:7px;
+    color: rgb(116, 116, 116);
+}
+code{
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 230, 230);
+}
+.keys{
+    border-radius: 50px;
+    
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 22px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-color:rgba(0, 0, 0, 0);
+}
+
+
+.actionbt{
+    border-radius: 10px;   
+    height: 35px;
+    border-width: 2px;
+    margin:4px;
+   
+}
+
+.actionbt3{
+    border-radius: 5px;   
+    border-width: 2px;
+    margin-right:10px;
+    margin-left: 5px;
+    margin-bottom:15px;
+    border-width: 0px;
+ 
+}
+
+.actionbt2{
+    border-radius: 10px;   
+    height: 35px;
+    border-width: 2px;
+    margin-right:20px;
+    background-color: rgb(247, 203, 3);
+}
+
+
+@keyframes fadeText {
+}
+.transform {
+  animation: fadeText 6s infinite;
+}
+
+
+.team {
+    display: fex; /* Flex container for UL. */
+    height: 40px;
+    margin-right:-18px;
+    z-index:10px;
+  }
+  
+  .avatar {
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+  }
+
+.searchbar {
+    margin-top: 10px;
+    width: 95%;
+    height: 35px;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Style the input field and dropdown */
+.base {
+    text-align: end;
+    position: fixed;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    width: 100%;
+    bottom: 10px;
+}
+
+
+.content0 {
+    display:none;
+    max-width: 100%;
+    padding-left:20px;
+    padding-right:20px;
+   
+}
+.content1 {
+    max-width: 100%;
+    padding-left:20px;
+    padding-right:20px;
+}
+.content2 {
+    max-width: 100%;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/*base of the page
+ /* Position content at the base of the page */
+ .title {
+    width: 40%;
+  }
+  .link {
+    width: 60%;
+  }
+  .description {
+    width: 70%;
+  }
+  .shimmer {
+    padding: 5px;
+    width: 95%;
+    height: 120px;
+    margin: 10px auto;
+    background: #ffffff;
+  }
+  .shimmer .image-card {
+    height: 90px;
+    width: 90px;
+    float: right;
+    border-radius: 8px;
+  }
+  .stroke {
+    height: 15px;
+    background: #777;
+    margin-top: 20px;
+  }
+  
+  .wrapper {
+    width: 0px;
+    animation: fullView 0.5s forwards linear;
+  }
+  
+  @keyframes fullView {
+    100% {
+      width: 100%;
+    }
+  }
+  .animate {
+    animation: shimmer 3s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+  }
+  @keyframes shimmer {
+    from {
+      background-position: -1000px 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
+  
