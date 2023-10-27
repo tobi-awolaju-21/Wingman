@@ -10,3 +10,25 @@ updates--------------------
  introduce dynamic prompt eneration based on the users input
 
  and finally use Q and A model for resonse testing, validation and hover explanation.
+
+
+
+
+ [
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false, explanation: "" },
+      { text: "", correct: true, explanation: "" },
+      { text: "", correct: false, explanation: "" },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      {text: "",correct: false,explanation: "",},
+      {text: "",correct: false,explanation: "",},
+      {text: "",correct: true,explanation: "",},
+      ],
+    },
+  ];
