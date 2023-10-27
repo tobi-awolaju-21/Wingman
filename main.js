@@ -88,6 +88,8 @@ contentDiv.style.display = 'block';
  // Using JavaScript to hide the div
  var contentDiv = document.querySelector('.content0');
  contentDiv.style.display = 'none';
+ //show quiz
+ 
 
           // Get the container element
           const container = document.querySelector(".content2");
