@@ -1,33 +1,53 @@
-const quizData = [
+
+var renamedData = {};
+
+
+var quizData = [
   {
-    question: "What is 2 + 2?",
+    question: "What is the difference between a concept and a fact?",
     answers: [
-      { text: "3", correct: false, explanation: "2 + 2 is not equal to 3." },
-      { text: "4", correct: true, explanation: "2 + 2 is equal to 4." },
-      { text: "5", correct: false, explanation: "2 + 2 is not equal to 5." },
+      {
+        text: "A concept is an abstract idea, while a fact is a specific piece of information.",
+        correct: true,
+        explanation: "Concepts are general, while facts are specific.",
+      },
+      {
+        text: "A concept is a concrete object, while a fact is an abstract idea.",
+        correct: false,
+        explanation: "Concepts are not concrete objects, but rather abstract ideas.",
+      },
+      {
+        text: "A concept is a fact, while a fact is a concept.",
+        correct: false,
+        explanation: "Concepts and facts are two different things.",
+      },
     ],
   },
   {
-    question: "What is the capital of France?",
+    question: "What are the key components of a good explanation?",
     answers: [
       {
-        text: "London",
-        correct: false,
-        explanation: "The capital of France is not London.",
-      },
-      {
-        text: "Berlin",
-        correct: false,
-        explanation: "The capital of France is not Berlin.",
-      },
-      {
-        text: "Paris",
+        text: "Clarity, accuracy, and relevance",
         correct: true,
-        explanation: "The capital of France is Paris.",
+        explanation: "A good explanation is clear, accurate, and relevant to the audience.",
+      },
+      {
+        text: "Complexity, difficulty, and ambiguity",
+        correct: false,
+        explanation: "A good explanation should not be complex, difficult, or ambiguous.",
+      },
+      {
+        text: "Brevity, simplicity, and conciseness",
+        correct: false,
+        explanation: "A good explanation should not be brief, simple, or concise.",
       },
     ],
   },
 ];
+
+
+// Remove the declaration of quizData
+// const quizData = [...]; // Keep your JSON data separate
 
 const modal = document.getElementById("modal");
 const modalText = document.getElementById("modal-text");
@@ -37,7 +57,7 @@ const quizContainer = document.getElementById("quiz");
 const submitButton = document.getElementById("submit");
 const resultsContainer = document.getElementById("results");
 
-function buildQuiz() {
+function buildQuiz(quizData) {
   quizData.forEach((question, index) => {
     const questionDiv = document.createElement("div");
     questionDiv.classList.add("question");
@@ -97,6 +117,32 @@ window.addEventListener("click", (event) => {
   }
 });
 
-buildQuiz();
+
+
+
+function build(){
+
+const type = typeof newQuestion;
+console.log(type);
+
+function removeJsonTags(string) {
+  if (string.startsWith("```json")) {
+    string = string.substring(7);
+  }
+  if (string.endsWith("```")) {
+    string = string.substring(0, string.length - 3);
+  }
+  return string;
+}
+
+const string = "`json{\"key\": \"value\"}`";
+newQuestion = removeJsonTags(newQuestion);
+
+console.log(newQuestion);
+const array = JSON.parse(newQuestion);
+console.log(array);
+buildQuiz(array);
+}
+
 
 submitButton.addEventListener("click", showResults);
