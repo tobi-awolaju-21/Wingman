@@ -1,3 +1,5 @@
+var newQuestion = "This is a question from main.js";
+
 document.addEventListener("DOMContentLoaded", function () {
   // Your JavaScript code here
   function changeText() {
@@ -29,12 +31,17 @@ function handleKeyPress(event) {
     // Using JavaScript to hide the div
 var contentDiv = document.querySelector('.content2');
 contentDiv.style.display = 'none';
+ //hide quizer
+    // Using JavaScript to hide the div
+    var contentDiv = document.querySelector('.content3');
+    contentDiv.style.display = 'none';
 // show shimmer
 // Using JavaScript to hide the div
 var contentDiv = document.querySelector('.content0');
 contentDiv.style.display = 'block';
 
-
+     // original response
+     var PalmResponse = "json"
     // Check if the Enter key was pressed
     const inputValue = event.target.value;
     
@@ -69,6 +76,7 @@ contentDiv.style.display = 'block';
       .then((responseData) => {
         if (responseData.candidates && responseData.candidates.length > 0) {
           const output = responseData.candidates[0].output;
+          PalmResponse = output;
           console.log("Output: ", output);
           // start of formatting
 
@@ -91,6 +99,48 @@ contentDiv.style.display = 'block';
           container.innerHTML = html;
 
           //end of formating
+
+
+        // fecth question from page  
+
+        // Prepare the data for the request
+        const mod3 = ' from the content in the curly parentensis "{}" generate a set of question and anwers to text my knowledge on it, make it 2 complex questions but your response should be json with do not forget the key  "question:explantion" too and use the format enclosed in the (double hash) ##json-format## "" {';
+
+        const mod4 =
+          '} and this is the format for the question ##const quizData = [{ question: "",answers: [{ text: "", correct: false, explanation: "" }, { text: "", correct: true, explanation: "" },{ text: "", correct: false, explanation: "" },],},{question: "",answers: [{text: "",correct: false,explanation: "",},{text: "",correct: false,explanation: "",},{text: "",correct: true,explanation: "",},],},];##  do not miss any of the enlosure, return array not string';
+    
+
+    const data = {
+      prompt: {
+        text: mod3 + PalmResponse + mod4,
+      },
+    };
+
+        fetch(apiUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => response.json())
+          .then((responseData) => {
+            if (responseData.candidates && responseData.candidates.length > 0) {
+              const output = responseData.candidates[0].output;
+              //console.log("Output: ", output);
+              newQuestion = output;
+                build();
+             //buildQuiz(output);
+        // shpw quizer on response
+        //show quizer
+        // Using JavaScript to hide the div
+        var contentDiv = document.querySelector('.content3');
+        contentDiv.style.display = 'block';
+            }else{
+              console.log("an error has occured while loading quiz")
+            }});
+
+
         } else {
           console.error("No candidates in the response");
         }
