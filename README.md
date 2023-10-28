@@ -5,7 +5,7 @@ Converting Assignment Questions into Crash Courses for Enhanced Learning using t
 "Wingman" is an AI tool designed to convert complex assignment questions into concise and understandable crash courses. The target audience includes students, self-learners, and professionals seeking to grasp challenging concepts quickly. It addresses the problem of limited time and difficulties in understanding assignments, making learning more accessible and efficient.
 
 ##Tutorial for Use and Best Practices: 🌱
-**Step 1:** Access the "Wingman" platform, either through a web interface or a mobile app.
+**Step 1:** Access the "Wingman" platform, either through a web interface or a mobile app. 
 **Step 2:** Input the assignment question or problem statement that you want to understand better.
 **Step 3:** "Wingman" analyzes the input and generates a short crash course. This course provides a simplified explanation of the topic, breaking it down into key concepts and examples.
 **Step 4:** Review the crash course, which may include text, images, and diagrams. Take notes or bookmark essential points for future reference.
