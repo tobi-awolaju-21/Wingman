@@ -125,6 +125,34 @@
     <br>
     <br>
     <br>
+     <div class="splash">
+        <img src="./wing.gif" style="width:50px; margin:10px; border-radius: 10px;">
+        <h4 style="color:white;">.. ... . .... .. ..... .... ... . .... .. ..... .. ...</h4>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var splashElement = document.querySelector(".splash");
+
+                if (splashElement) {
+                    var opacity = 1; // Initial opacity
+                    var duration = 3000; // Total duration of the fade in milliseconds
+                    var interval = 20; // Time interval for each step (20ms for a smooth effect)
+                    var steps = duration / interval;
+                    var step = (1 - 0) / steps; // Calculate the step size
+
+                    var fadeOut = setInterval(function () {
+                        opacity -= step; // Reduce opacity by the step size
+                        splashElement.style.opacity = opacity;
+
+                        if (opacity <= 0) {
+                            // Opacity has reached 0, so hide the element and clear the interval
+                            splashElement.style.display = "none";
+                            clearInterval(fadeOut);
+                        }
+                    }, interval);
+                }
+            });
+        </script>
+    </div>
 </body>
 
 <script src="./main.js"></script>
