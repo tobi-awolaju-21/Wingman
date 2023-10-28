@@ -1,3 +1,7 @@
+**Wingman:**
+![NotLess](https://github.com/tobi-awolaju-21/Wingman/raw/main/wing.gif)
+
+
 ##Use Case Title:🔮
 Converting Assignment Questions into Crash Courses for Enhanced Learning using the OpenSource AI tool Wingman
 
