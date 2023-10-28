@@ -48,11 +48,13 @@ code{
 .splash{
   background-color:rgb(247, 203, 3);
   color:rgb(247, 203, 3);
-  height:100vh;
-  width: 100vw;
+  height: 140vh;
+  width: 140vw;
   position: fixed; /* or absolute, fixed, etc. */
   top: 0px;
   transition: opacity 1s;
+  margin-left:-10px;
+  margin-right:10px;  
 }
 .keys{
   border-radius: 50px;
