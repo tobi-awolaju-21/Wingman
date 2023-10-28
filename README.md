@@ -1,7 +1,3 @@
-**Wingman:**
-![Alt text](https://github.com/tobi-awolaju-21/Wingman/raw/main/wing.gif){:height="100px" width="100px}
-
-
 ##Use Case Title:🔮
 Converting Assignment Questions into Crash Courses for Enhanced Learning using the OpenSource AI tool Wingman
 
@@ -45,3 +41,5 @@ Without "Wingman," learners would typically spend more time deciphering complex 
 - "Wingman" must ensure the validity of AI-generated results by employing robust fact-checking and quality control mechanisms.
 - The tool should be transparent about the limitations of its simplifications to prevent potential misconceptions.
 - Users should be aware of the tool's role as a learning aid rather than a replacement for traditional learning methods.
+
+- ![Alt text](https://github.com/tobi-awolaju-21/Wingman/raw/main/wing.gif)
