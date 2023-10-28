@@ -45,6 +45,15 @@ code{
   color: rgb(0, 0, 0);
   background-color: rgb(230, 230, 230);
 }
+.splash{
+  background-color:rgb(247, 203, 3);
+  color:rgb(247, 203, 3);
+  height:100vh;
+  width: 100vw;
+  position: fixed; /* or absolute, fixed, etc. */
+  top: 0px;
+  transition: opacity 1s;
+}
 .keys{
   border-radius: 50px;
   
