@@ -46,8 +46,8 @@ code{
   background-color: rgb(230, 230, 230);
 }
 .splash{
-  background-color:rgb(247, 203, 3);
-  color:rgb(247, 203, 3);
+  background-color:rgb(250, 250, 250);
+  color:rgb(250, 250, 250);
   height: 140vh;
   width: 140vw;
   position: fixed; /* or absolute, fixed, etc. */
