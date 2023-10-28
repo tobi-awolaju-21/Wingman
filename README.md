@@ -1,5 +1,5 @@
 **Wingman:**
-![NotLess](https://github.com/tobi-awolaju-21/Wingman/raw/main/wing.gif)
+![Alt text](https://github.com/tobi-awolaju-21/Wingman/raw/main/wing.gif){:height="100px" width="100px}
 
 
 ##Use Case Title:🔮
